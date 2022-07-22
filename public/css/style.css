@@ -1,0 +1,8 @@
+#previewImg{
+    width:300px;
+    object-fit:cover;
+}
+.product_img{
+    width: 80px;
+    object-fit: cover;
+}

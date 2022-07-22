@@ -1,0 +1,181 @@
+.container {
+    padding: 0px 11.11%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+/* path and banner */
+.path {
+    padding: 28px 0px 29px 11.11%;
+    background-color: #F4F5F5;
+}
+
+.main_container {
+    padding: 34px 11.11%;
+    background: #fcfcfc;
+    overflow: auto;
+    min-width: 1360px;
+    display: flex;
+    gap: 40px;
+}
+
+
+/* block-left */
+.product_block_left {
+    /* width: 46%; */
+    display: flex;
+    gap: 16px;
+    /* background-color: red; */
+}
+
+.sub_img_item {
+    width: 79px;
+    height: 80px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.main_img {
+    width: 363px;
+    height: 547px;
+}
+
+.main_img img {
+    width: 100%;
+}
+
+
+/* block-right */
+.product_block_right {
+    /* width: 54%; */
+    /* background-color: yellow; */
+}
+
+.product_title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.product_price {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #C97178;
+    margin-bottom: 20px;
+}
+
+.short_info {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #55595B;
+    margin-bottom: 40px;
+}
+
+.product_name {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2B2F32;
+    text-transform: uppercase;
+
+}
+
+.product_status {
+    text-transform: uppercase;
+    font-family: "DM Sans";
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    padding: 7px 12px;
+    background: #c97178;
+    color: #ffffff;
+}
+
+.quantity_box {
+    display: flex;
+}
+
+.add_to_cart {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.subtraction_btn,
+.addition_btn {
+    line-height: 52px;
+    padding: 0px 18px;
+    background: #2b2f32;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.input_quantity {
+    border: none;
+    outline: 0;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    width: 88px;
+    background-color: #F9F9F9;
+}
+
+.add_to_cart_btn {
+    background-color: #2B2F32;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 24px;
+    padding: 0px 35px;
+    cursor: pointer;
+}
+
+.description {
+    margin-bottom: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5D5D6;
+}
+
+.des_title {
+    text-transform: capitalize;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+.des_content {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #55595B;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 12px;
+
+}
