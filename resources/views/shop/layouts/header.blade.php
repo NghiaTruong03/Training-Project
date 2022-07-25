@@ -21,18 +21,19 @@
       </div>
       <nav class="header_navbar">
         <a href="{{route('shop.index')}}">
-          <div class="tag tag_active">home</div>
+          <div class="tag tag-active"><p>home</p></div>
         </a>
         <a href="">
-          <div class="tag">about us</div>
+          <div class="tag"><p>about us</p></div>
         </a>
         <a href="">
-          <div class="tag tag-dropdown">
-            <p>shop</p><img src="{{ url('assets/shop/assets') }}/img/icon/downArrow.png" alt="">
+          <div class="tag">
+            <p>shop</p>
+            <img src="{{ url('assets/shop/assets') }}/img/icon/downArrow.png" alt="">
           </div>
         </a>
         <a href="">
-          <div class="tag">contact</div>
+          <div class="tag"><p>contact</p></div>
         </a>
       </nav>
       <div class="header_cart">
@@ -45,7 +46,7 @@
         </div>
       </div>
       <div class="header_toggleMenu">
-        <img src="assets/img/menu_1.png" alt="">
+        <img src="{{ url('assets/shop/assets') }}/img/menu_1.png" alt="">
       </div>
     </div>
   </header>

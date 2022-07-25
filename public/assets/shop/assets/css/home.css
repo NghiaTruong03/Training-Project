@@ -242,6 +242,31 @@
     text-align: center;
     color: #2B2F32;
 }
+.box2_nav_bar_item{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #2B2F32;
+    cursor: pointer;
+    
+}
+.box2_nav_bar_item-active{
+    color: #c97178 !important;
+    position: relative;
+}
+.box2_nav_bar_item-active::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    margin: auto;
+    width:90%;
+    left: 5%;
+    height: 1.5px;
+    background: #c97178;
+}
 
 .box2_main {
     display: flex;

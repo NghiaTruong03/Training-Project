@@ -45,7 +45,8 @@
                         <div class="filter_title">products category</div>
                         <div class="filter_content">
                             @foreach ($categories as $category)
-                            <a class="f_category" href="">{{$category->cate_name}}</a>
+                            {{-- <a class="f_category" href="{{route('category.select', $category->id)}}">{{$category->cate_name}}</a> --}}
+                            <a class="f_category" href="#">{{$category->cate_name}}</a>
                             @endforeach
                             {{-- <a class="f_category-active" href="">clothing</a>
                             <a class="f_category" href="">accessories</a>
@@ -121,8 +122,13 @@
                 <div class="product_list">
                     <div class="sort">
                         <div class="sort_select">
-                            <p>default sorting</p>
+                            <p class="option_title">default sorting</p>
                             <img src="{{ url('assets/shop/assets') }}/img/sort-up.png" alt="">
+                            <div class="sort_option hidden">
+                                <div class="option">Default Sorting</div>
+                                <div class="option">Sort by price: low to high</div>
+                                <div class="option">Sort by price: high to low</div>
+                            </div>
                         </div>
                     </div>
                     <div class="products">
@@ -130,9 +136,9 @@
                         <div class="p_item_box">
                             <div class="p_item_box_img">
                                 <img src="{{ url('storage/' . $product->pro_image) }}" alt="">
-                                <div class="box_img_status">hot</div>
+                                <div class="box_img_status status-2">sale</div>
                                 <div class="box_img_cart">
-                                    <img src="{{ url('assets/shop/assets') }}/shop/{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
+                                    <img src="{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
                                 </div>
                             </div>
                             <div class="p_item_box_name">{{$product->pro_name}}</div>
@@ -145,9 +151,23 @@
                         <div class="p_item_box">
                             <div class="p_item_box_img">
                                 <img src="{{ url('assets/shop/assets') }}/img/product2.png" alt="">
-                                <div class="box_img_status">hot</div>
+                                <div class="box_img_status status-3">sold out</div>
                                 <div class="box_img_cart">
-                                    <img src="{{ url('assets/shop/assets') }}/shop/{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
+                                    <img src="{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
+                                </div>
+                            </div>
+                            <div class="p_item_box_name">BLACK BOXY BACKPACK</div>
+                            <div class="p_item_box_price">
+                                <div class="p_item_box_oldPrice"></div>
+                                <div class="p_item_box_newPrice">$ 380.00</div>
+                            </div>
+                        </div>
+                        <div class="p_item_box">
+                            <div class="p_item_box_img">
+                                <img src="{{ url('assets/shop/assets') }}/img/product2.png" alt="">
+                                <div class="box_img_status status-1">hot</div>
+                                <div class="box_img_cart">
+                                    <img src="{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
                                 </div>
                             </div>
                             <div class="p_item_box_name">BLACK BOXY BACKPACK</div>
@@ -161,7 +181,7 @@
                                 <img src="{{ url('assets/shop/assets') }}/img/product2.png" alt="">
                                 <div class="box_img_status">hot</div>
                                 <div class="box_img_cart">
-                                    <img src="{{ url('assets/shop/assets') }}/shop/{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
+                                    <img src="{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
                                 </div>
                             </div>
                             <div class="p_item_box_name">BLACK BOXY BACKPACK</div>
@@ -175,7 +195,7 @@
                                 <img src="{{ url('assets/shop/assets') }}/img/product2.png" alt="">
                                 <div class="box_img_status">hot</div>
                                 <div class="box_img_cart">
-                                    <img src="{{ url('assets/shop/assets') }}/shop/{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
+                                    <img src="{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
                                 </div>
                             </div>
                             <div class="p_item_box_name">BLACK BOXY BACKPACK</div>
@@ -184,20 +204,7 @@
                                 <div class="p_item_box_newPrice">$ 380.00</div>
                             </div>
                         </div>
-                        <div class="p_item_box">
-                            <div class="p_item_box_img">
-                                <img src="{{ url('assets/shop/assets') }}/img/product2.png" alt="">
-                                <div class="box_img_status">hot</div>
-                                <div class="box_img_cart">
-                                    <img src="{{ url('assets/shop/assets') }}/shop/{{ url('assets/shop/assets') }}/img/icon/bag.png" alt="">
-                                </div>
-                            </div>
-                            <div class="p_item_box_name">BLACK BOXY BACKPACK</div>
-                            <div class="p_item_box_price">
-                                <div class="p_item_box_oldPrice"></div>
-                                <div class="p_item_box_newPrice">$ 380.00</div>
-                            </div>
-                        </div>
+
                     </div>
                     {{-- {{ $productList->links() }} --}}
 
@@ -225,6 +232,7 @@
     <!---------------------------->
 
     <!-- Optional JavaScript -->
+    <script type="text/javascript" src="{{ url('assets/shop/assets') }}/js/jquery.min.js"></script>
     <script src="{{ url('assets/shop/assets') }}/js/list_product.js"></script>
 </body>
 

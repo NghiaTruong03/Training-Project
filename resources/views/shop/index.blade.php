@@ -94,7 +94,7 @@
       <div class="box2_content">Wanna shine with the most outstanding outfits? Let’s see our featured products and
         choose the best choice for you</div>
       <div class="box2_nav_bar">
-        <div class="box2_nav_bar_item_active">women's</div>
+        <div class="box2_nav_bar_item">women's</div>
         <div class="box2_nav_bar_item">mens</div>
         <div class="box2_nav_bar_item">unisex</div>
       </div>
