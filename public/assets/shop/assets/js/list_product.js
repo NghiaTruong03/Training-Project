@@ -39,14 +39,30 @@ rangeInput.forEach(input => {
     })
 })
 
-$(".list_sort_check").click(function() {
-    $('.list_sort_all').toggleClass('hidden');
+
+
+$(".sort_select").click(function() {
+    $('.sort_option').toggleClass('hidden');
 })
 
-$('.list_sort_post').click(function() {
-    let $title_post = $(this).html();
-   let $title = $('.list_sort_check_tittle').html(); 
-   if($title_post !== $title ){
-    $('.list_sort_check_tittle').html($title_post);
-   }
+$('.option').click(function(){
+    let $selected_option = $(this).html();
+    let $option = $('.option_title').html();
+    if($selected_option != $option){
+        $('.option_title').html($selected_option);
+    }
+})
+
+$(document).on('click','.f_category',function() {
+    $('.f_category').removeClass('f_category-active');
+    $(this).addClass('f_category-active');
+})
+
+$(document).on('click','.item_color',function() {
+    $('.item_color').removeClass('item_color-selected');
+    $(this).addClass('item_color-selected');
+})
+$(document).on('click','.item_size',function() {
+    $('.item_size').removeClass('item_size-selected');
+    $(this).addClass('item_size-selected');
 })

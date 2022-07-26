@@ -20,3 +20,12 @@ $('.slider_banner').owlCarousel({
         }
     }
 })
+
+$(document).on('click','.tag',function() {
+    $('.tag').removeClass('tag-active');
+    $(this).addClass('tag-active');
+})
+$(document).on('click','.box2_nav_bar_item',function() {
+    $('.box2_nav_bar_item').removeClass('box2_nav_bar_item-active');
+    $(this).addClass('box2_nav_bar_item-active');
+})

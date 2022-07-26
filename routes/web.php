@@ -27,6 +27,8 @@ use Illuminate\Support\Facades\Route;
     Route::get('product_list',[HomeController::class,'product_list'])->name('product.list');
     //Product detail
     Route::get('product_detail/{id}',[HomeController::class,'product_detail'])->name('product.detail');
+    //Filter
+    Route::get('category/{id}',[HomeController::class,'categoryFilter'])->name('category.select');
 
 
 //Admin page
